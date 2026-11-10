@@ -1,0 +1,14 @@
+{
+  "name": "barber-studio",
+  "version": "1.0.0",
+  "description": "Web barber shopu Barber Studio s online rezerváciou termínov (demo, bez servera a bez závislostí).",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "test": "node --test tests/logic.test.js tests/server.test.js",
+    "test:e2e": "python3 tests/e2e/run_e2e.py"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

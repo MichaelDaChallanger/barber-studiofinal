@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barber Studio</title>
+  <meta name="description" content="Barber Studio v Bratislave: pánske strihy, úprava brady a holenie britvou. Pozrite si cenník, vyberte si barbera a rezervujte termín online.">
+  <meta name="theme-color" content="#17110d">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sk_SK">
+  <meta property="og:title" content="Barber Studio – barber shop s online rezerváciou">
+  <meta property="og:description" content="Pánske strihy, úprava brady a holenie britvou. Voľné termíny vidíte okamžite a rezervácia zaberie menej ako minútu.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2317110d'/%3E%3Crect x='11' y='5' width='10' height='22' rx='5' fill='%23f3ece0'/%3E%3Cpath d='M11 13l10-5M11 21l10-5' stroke='%23b5483a' stroke-width='3'/%3E%3Cpath d='M11 17l10-5M11 25l10-5' stroke='%232f4a5a' stroke-width='3'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Barber Studio",
+    "telephone": "+421900123456",
+    "email": "barbershopmn17@gmail.com",
+    "priceRange": "12–55 €",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Obchodná 12",
+      "postalCode": "811 06",
+      "addressLocality": "Bratislava",
+      "addressCountry": "SK"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "09:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#hlavny-obsah">Preskočiť na obsah</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Barber Studio, domov">
+        <svg class="brand-pole" viewBox="0 0 24 40" aria-hidden="true" focusable="false">
+          <defs><clipPath id="brand-pole-clip"><rect x="5" y="5" width="14" height="30" rx="7"/></clipPath></defs>
+          <g clip-path="url(#brand-pole-clip)">
+            <rect x="5" y="5" width="14" height="30" fill="#f3ece0"/>
+            <path d="M0 14L24 2M0 30L24 18M0 46L24 34" stroke="#b5483a" stroke-width="4.500"/>
+            <path d="M0 22L24 10M0 38L24 26" stroke="#2f4a5a" stroke-width="4.500"/>
+          </g>
+          <rect x="3.500" y="2" width="17" height="4" rx="2" fill="#f2a05a"/><rect x="3.500" y="34" width="17" height="4" rx="2" fill="#f2a05a"/>
+        </svg>
+        <span class="brand-name">Barber Studio</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Hlavná navigácia">
+        <ul>
+          <li><a href="#o-nas">O nás</a></li>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#barberi">Barberi</a></li>
+          <li><a href="#rezervacia">Rezervácia</a></li>
+          <li><a href="#moje-rezervacie">Moje rezervácie</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <a class="btn btn-orange btn-small nav-cta" href="#rezervacia">Rezervovať termín</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="hlavny-obsah">
+    <noscript>
+      <p class="noscript-note">Rezervačný systém potrebuje zapnutý JavaScript. Zavolajte nám na +421 900 123 456.</p>
+    </noscript>
+
+    <!-- ÚVOD -->
+    <section class="hero theme-dark" id="uvod" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="open-now" id="open-now" aria-live="polite"></p>
+          <h1 id="hero-title"><span class="hero-line">Poriadny strih.</span> <span class="hero-line hero-accent">Bez čakania.</span></h1>
+          <p class="hero-lead">Klasické remeslo, presný strih a termín, ktorý máte istý. Vyberte si službu, barbera a čas. Rezervácia zaberie menej ako minútu.</p>
+          <div class="hero-actions">
+            <a class="btn btn-orange btn-large" href="#rezervacia">Rezervovať termín</a>
+            <a class="btn btn-outline-light btn-large" href="#sluzby">Pozrieť cenník</a>
+          </div>
+        </div>
+
+        <div class="hero-scene" aria-hidden="true">
+          <svg viewBox="0 0 720 620" preserveAspectRatio="xMidYMax meet" focusable="false">
+            <defs>
+              <linearGradient id="sc-brass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7c996"/><stop offset=".5" stop-color="#c98345"/><stop offset="1" stop-color="#8a5524"/></linearGradient>
+              <linearGradient id="sc-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6f5a4b"/><stop offset=".45" stop-color="#3d2f26"/><stop offset="1" stop-color="#1c1511"/></linearGradient>
+              <radialGradient id="sc-lamp" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#fffaf0"/><stop offset=".5" stop-color="#ffdca6"/><stop offset="1" stop-color="#f2a05a"/></radialGradient>
+              <radialGradient id="sc-halo"><stop offset="0" stop-color="#ffba6e" stop-opacity=".5"/><stop offset=".4" stop-color="#ffba6e" stop-opacity=".15"/><stop offset="1" stop-color="#ffba6e" stop-opacity="0"/></radialGradient>
+              <linearGradient id="sc-leather" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a44a3a"/><stop offset=".5" stop-color="#7d3227"/><stop offset="1" stop-color="#4f1f19"/></linearGradient>
+              <linearGradient id="sc-chrome" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8d867d"/><stop offset=".35" stop-color="#f1ece4"/><stop offset=".7" stop-color="#a39c93"/><stop offset="1" stop-color="#5f5951"/></linearGradient>
+              <linearGradient id="sc-wood" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8f6f56"/><stop offset="1" stop-color="#5a4334"/></linearGradient>
+              <linearGradient id="sc-floor" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f2a05a" stop-opacity="0"/><stop offset=".18" stop-color="#f2a05a" stop-opacity=".4"/><stop offset=".85" stop-color="#f2a05a" stop-opacity=".4"/><stop offset="1" stop-color="#f2a05a" stop-opacity="0"/></linearGradient>
+              <clipPath id="sc-mirror-clip"><path d="M205 470V200a115 115 0 0 1 230 0v270z"/></clipPath>
+              <clipPath id="sc-pole-clip"><rect x="72" y="262" width="36" height="140" rx="5"/></clipPath>
+            </defs>
+
+            <!-- svetlo lámp -->
+            <g class="sc-halos">
+              <circle cx="165" cy="205" r="135" fill="url(#sc-halo)"/>
+              <circle cx="475" cy="205" r="135" fill="url(#sc-halo)"/>
+            </g>
+
+            <!-- podlaha -->
+            <rect x="0" y="599" width="720" height="2" fill="url(#sc-floor)"/>
+
+            <!-- nástenné hodiny (ukazujú skutočný čas prevádzky) -->
+            <g>
+              <circle cx="86" cy="150" r="46" fill="url(#sc-brass)"/>
+              <circle cx="86" cy="150" r="40" fill="#f3ece0"/>
+              <g stroke="#2a1a0c" stroke-linecap="round"><line x1="86" y1="113" x2="86" y2="120" stroke-width="2.6" transform="rotate(0 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(30 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(60 86 150)"/><line x1="86" y1="113" x2="86" y2="120" stroke-width="2.6" transform="rotate(90 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(120 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(150 86 150)"/><line x1="86" y1="113" x2="86" y2="120" stroke-width="2.6" transform="rotate(180 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(210 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(240 86 150)"/><line x1="86" y1="113" x2="86" y2="120" stroke-width="2.6" transform="rotate(270 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(300 86 150)"/><line x1="86" y1="113" x2="86" y2="118" stroke-width="1.4" transform="rotate(330 86 150)"/></g>
+              <line id="clock-hour" x1="86" y1="150" x2="86" y2="128" stroke="#2a1a0c" stroke-width="4.500" stroke-linecap="round" transform="rotate(305 86 150)"/>
+              <line id="clock-minute" x1="86" y1="150" x2="86" y2="118" stroke="#2a1a0c" stroke-width="3" stroke-linecap="round" transform="rotate(60 86 150)"/>
+              <circle cx="86" cy="150" r="4" fill="#b5483a"/>
+            </g>
+
+            <!-- barber pól -->
+            <g>
+              <rect x="86" y="236" width="8" height="14" fill="url(#sc-chrome)"/>
+              <circle cx="90" cy="234" r="7" fill="url(#sc-brass)"/>
+              <rect x="66" y="248" width="48" height="16" rx="6" fill="url(#sc-brass)"/>
+              <rect x="72" y="262" width="36" height="140" rx="5" fill="#f3ece0"/>
+              <g clip-path="url(#sc-pole-clip)"><g class="sc-pole-stripes"><path d="M72 250L108 226V238L72 262z" fill="#b5483a"/><path d="M72 226L108 202V214L72 238z" fill="#2f4a5a"/><path d="M72 298L108 274V286L72 310z" fill="#b5483a"/><path d="M72 274L108 250V262L72 286z" fill="#2f4a5a"/><path d="M72 346L108 322V334L72 358z" fill="#b5483a"/><path d="M72 322L108 298V310L72 334z" fill="#2f4a5a"/><path d="M72 394L108 370V382L72 406z" fill="#b5483a"/><path d="M72 370L108 346V358L72 382z" fill="#2f4a5a"/><path d="M72 442L108 418V430L72 454z" fill="#b5483a"/><path d="M72 418L108 394V406L72 430z" fill="#2f4a5a"/><path d="M72 490L108 466V478L72 502z" fill="#b5483a"/><path d="M72 466L108 442V454L72 478z" fill="#2f4a5a"/><path d="M72 538L108 514V526L72 550z" fill="#b5483a"/><path d="M72 514L108 490V502L72 526z" fill="#2f4a5a"/></g></g>
+              <rect x="72" y="262" width="11" height="140" fill="#fff" opacity=".28"/>
+              <rect x="99" y="262" width="9" height="140" fill="#000" opacity=".16"/>
+              <rect x="66" y="400" width="48" height="16" rx="6" fill="url(#sc-brass)"/>
+              <circle cx="90" cy="424" r="7" fill="url(#sc-brass)"/>
+            </g>
+
+            <!-- zrkadlo -->
+            <path d="M205 470V200a115 115 0 0 1 230 0v270z" fill="url(#sc-glass)"/>
+            <g clip-path="url(#sc-mirror-clip)">
+              <ellipse cx="225" cy="215" rx="85" ry="110" fill="url(#sc-halo)" opacity=".7"/>
+              <ellipse cx="420" cy="215" rx="85" ry="110" fill="url(#sc-halo)" opacity=".7"/>
+              <path d="M318 70h64L262 480h-64z" fill="#fff" opacity=".06"/>
+              <path d="M402 70h22L304 480h-22z" fill="#fff" opacity=".045"/>
+            </g>
+            <path d="M205 470V200a115 115 0 0 1 230 0v270z" fill="none" stroke="url(#sc-brass)" stroke-width="9" stroke-linejoin="round"/>
+
+            <!-- nástenné lampy -->
+            <g>
+              <path d="M165 258v-34M475 258v-34" stroke="url(#sc-brass)" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="165" cy="260" r="8" fill="url(#sc-brass)"/><circle cx="475" cy="260" r="8" fill="url(#sc-brass)"/>
+              <circle class="sc-bulb" cx="165" cy="205" r="20" fill="url(#sc-lamp)"/><circle class="sc-bulb" cx="475" cy="205" r="20" fill="url(#sc-lamp)"/>
+            </g>
+
+            <!-- polica s potrebami -->
+            <g>
+              <path d="M204 490l12 22M436 490l-12 22" stroke="#3a2b21" stroke-width="6" stroke-linecap="round"/>
+              <rect x="185" y="478" width="270" height="13" rx="3" fill="url(#sc-wood)"/>
+              <path d="M187 479.500h266" stroke="#fff" stroke-opacity=".28" stroke-width="1.500"/>
+              <!-- tonikum -->
+              <rect x="225" y="396" width="14" height="10" rx="2" fill="url(#sc-brass)"/>
+              <rect x="227" y="404" width="10" height="16" fill="#3d6072"/>
+              <rect x="216" y="418" width="32" height="60" rx="6" fill="#2f4a5a"/>
+              <rect x="221" y="438" width="22" height="24" rx="2" fill="#f3ece0"/>
+              <path d="M225 446h14M225 452h9" stroke="#2f4a5a" stroke-width="2"/>
+              <rect x="218" y="420" width="5" height="54" rx="2" fill="#fff" opacity=".18"/>
+              <!-- rozprašovač -->
+              <rect x="266" y="404" width="26" height="12" rx="3" fill="#221a15"/>
+              <rect x="290" y="407" width="10" height="5" rx="2" fill="#221a15"/>
+              <path d="M272 416v8" stroke="#221a15" stroke-width="3" stroke-linecap="round"/>
+              <rect x="274" y="414" width="10" height="16" fill="#cfc4b3"/>
+              <rect x="260" y="428" width="38" height="50" rx="9" fill="#e9dfd0"/>
+              <rect x="260" y="446" width="38" height="12" fill="#f2a05a"/>
+              <rect x="263" y="431" width="5" height="44" rx="2" fill="#fff" opacity=".5"/>
+              <!-- pomáda -->
+              <rect x="308" y="446" width="46" height="9" rx="3" fill="url(#sc-brass)"/>
+              <rect x="310" y="453" width="42" height="25" rx="5" fill="#221a15"/>
+              <rect x="318" y="459" width="26" height="12" rx="2" fill="#f2a05a"/>
+              <!-- miska so štetkou -->
+              <path d="M373 420c-3-12 3-22 12-24s20 7 18 24z" fill="#f3ece0"/>
+              <path d="M379 418c0-8 2-14 6-18M388 418c1-8 2-15 2-21M396 418c1-7 0-13-2-18" stroke="#cfc4b3" stroke-width="1.500" fill="none"/>
+              <rect x="380" y="418" width="16" height="30" rx="4" fill="url(#sc-wood)"/>
+              <rect x="380" y="424" width="16" height="4" fill="url(#sc-brass)"/>
+              <path d="M405 456a9 9 0 0 1 0 16" fill="none" stroke="#e9dfd0" stroke-width="4"/>
+              <rect x="368" y="446" width="40" height="32" rx="7" fill="#e9dfd0"/>
+              <rect x="371" y="449" width="5" height="26" rx="2" fill="#fff" opacity=".6"/>
+              <!-- uteráky -->
+              <rect x="418" y="462" width="30" height="16" rx="5" fill="#f3ece0"/>
+              <rect x="420" y="448" width="26" height="15" rx="5" fill="#fff"/>
+              <rect x="422" y="435" width="22" height="14" rx="5" fill="#f3ece0"/>
+              <path d="M421 470h24M423 455.500h20M425 442h16" stroke="#f2a05a" stroke-width="2"/>
+            </g>
+
+            <!-- barberské kreslo -->
+            <g>
+              <ellipse cx="585" cy="603" rx="128" ry="9" fill="#000" opacity=".4"/>
+              <ellipse cx="585" cy="594" rx="74" ry="9" fill="#2b2622"/>
+              <ellipse cx="585" cy="591" rx="74" ry="9" fill="url(#sc-chrome)"/>
+              <rect x="560" y="574" width="50" height="16" rx="5" fill="#6d665e"/>
+              <rect x="573" y="508" width="24" height="68" fill="url(#sc-chrome)"/>
+              <rect x="565" y="502" width="40" height="11" rx="4" fill="#57514a"/>
+              <path d="M597 540l44-17" stroke="url(#sc-chrome)" stroke-width="5" stroke-linecap="round"/>
+              <circle cx="643" cy="522" r="6" fill="#221a15"/>
+              <!-- opierka nôh -->
+              <path d="M573 562H470" stroke="#8d867d" stroke-width="5" stroke-linecap="round"/>
+              <path d="M508 498l-56 60" stroke="url(#sc-chrome)" stroke-width="8" stroke-linecap="round"/>
+              <rect x="418" y="553" width="56" height="10" rx="4" fill="url(#sc-chrome)"/>
+              <path d="M424 556h44" stroke="#5f5951" stroke-width="1.500" stroke-dasharray="3 3"/>
+              <!-- operadlo a opierka hlavy -->
+              <g transform="rotate(9 652 486)">
+                <rect x="651" y="270" width="7" height="34" fill="url(#sc-chrome)"/>
+                <rect x="632" y="236" width="46" height="40" rx="15" fill="url(#sc-leather)"/>
+                <rect x="636" y="240" width="7" height="30" rx="3" fill="#fff" opacity=".16"/>
+                <rect x="630" y="298" width="50" height="196" rx="22" fill="url(#sc-leather)"/>
+                <rect x="635" y="306" width="7" height="170" rx="3" fill="#fff" opacity=".14"/>
+                <circle cx="655" cy="350" r="3" fill="#3f1813"/><circle cx="655" cy="400" r="3" fill="#3f1813"/><circle cx="655" cy="450" r="3" fill="#3f1813"/>
+              </g>
+              <!-- sedadlo -->
+              <rect x="500" y="490" width="160" height="16" rx="6" fill="#57514a"/>
+              <rect x="496" y="460" width="164" height="38" rx="17" fill="url(#sc-leather)"/>
+              <path d="M512 466h132" stroke="#fff" stroke-opacity=".2" stroke-width="3" stroke-linecap="round"/>
+              <!-- podrúčka -->
+              <path d="M540 432c0 18 6 26 20 28" fill="none" stroke="url(#sc-chrome)" stroke-width="7" stroke-linecap="round"/>
+              <rect x="524" y="414" width="112" height="18" rx="9" fill="#5a231c"/>
+              <path d="M534 418.500h92" stroke="#fff" stroke-opacity=".18" stroke-width="2.500" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="quick" role="group" aria-labelledby="quick-title">
+          <div class="quick-form">
+            <h2 class="quick-title" id="quick-title">Rýchla rezervácia</h2>
+            <div class="quick-fields">
+              <div class="quick-field">
+                <label for="quick-service">Služba</label>
+                <select id="quick-service">
+                  <option value="">Vyberte službu</option>
+                </select>
+              </div>
+              <div class="quick-field">
+                <label for="quick-barber">Barber</label>
+                <select id="quick-barber">
+                  <option value="">Ktorýkoľvek barber</option>
+                </select>
+              </div>
+              <a class="btn btn-orange" id="quick-go" href="#rezervacia">Vybrať termín</a>
+            </div>
+          </div>
+
+          <aside class="next-slot" id="next-slot" aria-labelledby="next-slot-title" hidden>
+            <p class="next-slot-label" id="next-slot-title">Najbližší voľný termín</p>
+            <p class="next-slot-when" id="next-slot-when"></p>
+            <p class="next-slot-detail" id="next-slot-detail"></p>
+            <button class="btn btn-outline-light btn-small" type="button" id="next-slot-book" aria-label="Rezervovať najbližší voľný termín">Rezervovať</button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- bežiaci pás so službami (ozdobný, obsah je v cenníku nižšie) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track"></div>
+    </div>
+
+    <!-- O NÁS -->
+    <section class="section theme-dark" id="o-nas" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-intro">
+          <h2 id="about-title">Barber shop pre ľudí, ktorí si potrpia na detaily</h2>
+          <p>Barber Studio je malý holičský salón v centre mesta. Strihy robíme pomaly a poriadne: s konzultáciou, horúcim uterákom a ručným dokončením.</p>
+          <p>Nikam sa neponáhľame, a predsa nečakáte. Každý termín je vyhradený iba pre vás, takže si v kresle užijete celý čas, ktorý ste si rezervovali.</p>
+        </div>
+
+        <ul class="features">
+          <li>
+            <span class="icon-tile" data-icon="clock"></span>
+            <div><h3>Vyhradený čas</h3><p>Jeden termín, jeden zákazník. Nestojíte vo fronte.</p></div>
+          </li>
+          <li>
+            <span class="icon-tile" data-icon="scissors"></span>
+            <div><h3>Skúsení barberi</h3><p>Traja majstri, každý so svojou špecializáciou.</p></div>
+          </li>
+          <li>
+            <span class="icon-tile" data-icon="sparkle"></span>
+            <div><h3>Čistota na prvom mieste</h3><p>Nástroje po každom zákazníkovi dezinfikujeme a čepele vymieňame.</p></div>
+          </li>
+          <li>
+            <span class="icon-tile" data-icon="bottle"></span>
+            <div><h3>Kvalitná kozmetika</h3><p>Pracujeme s profesionálnymi produktmi na vlasy a bradu.</p></div>
+          </li>
+          <li>
+            <span class="icon-tile" data-icon="cup"></span>
+            <div><h3>Pokojná atmosféra</h3><p>Kožené kreslá, dobrá káva a hudba, ktorá neruší rozhovor.</p></div>
+          </li>
+          <li>
+            <span class="icon-tile" data-icon="calendarCheck"></span>
+            <div><h3>Rezervácia online</h3><p>Termín vyberiete kedykoľvek a jedným kliknutím ho presuniete alebo zrušíte.</p></div>
+          </li>
+        </ul>
+
+        <dl class="stats" id="about-stats"></dl>
+      </div>
+    </section>
+
+    <!-- SLUŽBY A CENNÍK -->
+    <section class="section theme-beige" id="sluzby" aria-labelledby="services-title">
+      <div class="container services-grid">
+        <aside class="featured" id="featured-service" aria-label="Odporúčaná služba"></aside>
+
+        <div class="services-main">
+          <div class="section-head">
+            <h2 id="services-title">Služby a cenník</h2>
+            <p>Ceny sú v eurách. Čas pri službe je dĺžka termínu, ktorú si v kalendári rezervujeme len pre vás.</p>
+          </div>
+          <div class="tabs" id="service-tabs" role="group" aria-label="Skupiny služieb"></div>
+          <ul class="menu" id="services-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKO TO PREBIEHA -->
+    <section class="section theme-dark" id="postup" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="process-title">Od výberu po kreslo v štyroch krokoch</h2>
+        </div>
+        <ol class="process">
+          <li>
+            <span class="process-no" aria-hidden="true">1</span>
+            <h3>Vyberiete službu a barbera</h3>
+            <p>Ak vám je jedno, kto vás ostrihá, zvoľte ktoréhokoľvek barbera a uvidíte najviac voľných časov.</p>
+          </li>
+          <li>
+            <span class="process-no" aria-hidden="true">2</span>
+            <h3>Zvolíte voľný termín</h3>
+            <p>Ponúkame iba časy, ktoré sú naozaj voľné a do ktorých sa celá služba zmestí.</p>
+          </li>
+          <li>
+            <span class="process-no" aria-hidden="true">3</span>
+            <h3>Dostanete potvrdenie</h3>
+            <p>S číslom rezervácie a možnosťou uložiť si termín do kalendára.</p>
+          </li>
+          <li>
+            <span class="process-no" aria-hidden="true">4</span>
+            <h3>Platíte až na mieste</h3>
+            <p>Termín môžete kedykoľvek pred začiatkom presunúť alebo zrušiť.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- NAŠE PRÁCE (zobrazí sa, len keď sú v data.js fotografie) -->
+    <section class="section theme-beige" id="prace" aria-labelledby="works-title" hidden>
+      <div class="container">
+        <div class="section-head">
+          <h2 id="works-title">Naše práce</h2>
+          <p>Každý strih robíme na mieru: podľa tvaru tváre, vlasov a toho, ako sa o ne staráte.</p>
+        </div>
+        <ul class="gallery" id="gallery-list"></ul>
+      </div>
+    </section>
+
+    <!-- BARBERI -->
+    <section class="section theme-white" id="barberi" aria-labelledby="barbers-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="barbers-title">Barberi</h2>
+          <p>Vyberte si majstra podľa štýlu alebo podľa toho, kto má najskôr voľno.</p>
+        </div>
+        <div class="barbers" id="barbers-list"></div>
+      </div>
+    </section>
+
+    <!-- REZERVÁCIA -->
+    <section class="section theme-beige" id="rezervacia" aria-labelledby="booking-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="booking-title">Rezervácia termínu</h2>
+          <p>Voľné termíny vidíte okamžite. Platíte až na mieste, online platba nie je potrebná.</p>
+        </div>
+
+        <p class="notice" id="system-notice" role="status" hidden></p>
+
+        <div class="booking-layout">
+          <form id="booking-form" class="booking-form" novalidate>
+            <fieldset class="step" data-step="service">
+              <legend><span class="step-no" aria-hidden="true">1</span>Služba</legend>
+              <div class="field">
+                <label for="service">Vyberte službu</label>
+                <select id="service" name="service" required aria-describedby="service-error">
+                  <option value="">Vyberte službu</option>
+                </select>
+                <p class="field-error" id="service-error" role="alert"></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="step" data-step="barber">
+              <legend><span class="step-no" aria-hidden="true">2</span>Barber</legend>
+              <div class="barber-choices" id="barber-choices" role="radiogroup" aria-label="Barber" aria-describedby="barber-error"></div>
+              <p class="field-error" id="barber-error" role="alert"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="date">
+              <legend><span class="step-no" aria-hidden="true">3</span>Dátum</legend>
+              <div class="days" id="date-chips" role="group" aria-label="Najbližšie dni"></div>
+              <div class="field field-date">
+                <label for="date">Iný dátum</label>
+                <input type="date" id="date" name="date" required aria-describedby="date-error date-hint">
+              </div>
+              <p class="field-hint" id="date-hint">V nedeľu máme zatvorené, v sobotu otvárame od 9:00 do 14:00.</p>
+              <p class="field-error" id="date-error" role="alert"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="time">
+              <legend><span class="step-no" aria-hidden="true">4</span>Čas</legend>
+              <p class="slots-message" id="slots-message" aria-live="polite">Najprv vyberte službu, barbera a dátum.</p>
+              <div class="slots" id="time-slots" role="radiogroup" aria-label="Dostupné časy" aria-describedby="time-error"></div>
+              <ul class="legend" id="slots-legend" hidden>
+                <li><span class="swatch swatch-free"></span>Voľné</li>
+                <li><span class="swatch swatch-booked"></span>Obsadené</li>
+                <li><span class="swatch swatch-off"></span>Nedostupné</li>
+              </ul>
+              <p class="field-error" id="time-error" role="alert"></p>
+            </fieldset>
+
+            <fieldset class="step" data-step="contact">
+              <legend><span class="step-no" aria-hidden="true">5</span>Vaše údaje</legend>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Meno a priezvisko</label>
+                  <input type="text" id="name" name="name" autocomplete="name" required maxlength="80" aria-describedby="name-error">
+                  <p class="field-error" id="name-error" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required aria-describedby="email-error">
+                  <p class="field-error" id="email-error" role="alert"></p>
+                </div>
+              </div>
+              <div class="field">
+                <label for="phone">Telefónne číslo</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" required placeholder="0900 123 456" aria-describedby="phone-error">
+                <p class="field-error" id="phone-error" role="alert"></p>
+              </div>
+              <div class="field">
+                <label for="note">Poznámka <span class="optional">(voliteľné)</span></label>
+                <textarea id="note" name="note" rows="3" maxlength="300" aria-describedby="note-count note-error"></textarea>
+                <p class="field-hint" id="note-count">0 / 300 znakov</p>
+                <p class="field-error" id="note-error" role="alert"></p>
+              </div>
+              <!-- pasca na roboty: človek toto pole nevidí a nevyplní -->
+              <div class="visually-hidden" aria-hidden="true">
+                <label for="website">Toto pole nechajte prázdne</label>
+                <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+              </div>
+              <div class="field field-check">
+                <input type="checkbox" id="consent" name="consent" aria-describedby="consent-error">
+                <label for="consent">Súhlasím so spracovaním údajov na účely tejto rezervácie.</label>
+                <p class="field-error" id="consent-error" role="alert"></p>
+              </div>
+              <p class="field-hint consent-more">Čo sa s údajmi deje, vysvetľuje časť <button class="link-button" type="button" data-open-privacy>Ochrana údajov</button>.</p>
+            </fieldset>
+
+            <p class="form-error" id="form-error" role="alert"></p>
+            <p class="submit-summary" id="submit-summary" hidden></p>
+            <button class="btn btn-orange btn-large btn-block" type="submit" id="submit-booking">Rezervovať termín</button>
+          </form>
+
+          <aside class="slip" id="slip" aria-labelledby="slip-title">
+            <h3 id="slip-title">Vaša rezervácia</h3>
+            <dl class="slip-list">
+              <div><dt>Služba</dt><dd id="slip-service" data-empty="Zatiaľ nevybraná">Zatiaľ nevybraná</dd></div>
+              <div><dt>Barber</dt><dd id="slip-barber" data-empty="Zatiaľ nevybraný">Zatiaľ nevybraný</dd></div>
+              <div><dt>Dátum</dt><dd id="slip-date" data-empty="Zatiaľ nevybraný">Zatiaľ nevybraný</dd></div>
+              <div><dt>Čas</dt><dd id="slip-time" data-empty="Zatiaľ nevybraný">Zatiaľ nevybraný</dd></div>
+            </dl>
+            <p class="slip-total"><span>Cena na mieste</span><strong id="slip-price">0&nbsp;€</strong></p>
+          </aside>
+        </div>
+
+        <!-- Potvrdenie rezervácie -->
+        <div class="confirmation" id="confirmation" tabindex="-1" role="status" hidden></div>
+      </div>
+    </section>
+
+    <!-- MOJE REZERVÁCIE -->
+    <section class="section theme-white" id="moje-rezervacie" aria-labelledby="mine-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="mine-title">Moje rezervácie</h2>
+          <p>Zadajte e-mail alebo telefónne číslo, s ktorým ste rezervovali. Termín tu presuniete aj zrušíte.</p>
+        </div>
+
+        <div class="lookup-wrap">
+        <form class="lookup" id="lookup-form" novalidate>
+          <div class="field">
+            <label for="lookup-input">E-mail alebo telefón</label>
+            <input type="text" id="lookup-input" name="lookup" autocomplete="email" aria-describedby="lookup-error lookup-hint">
+            <p class="field-hint" id="lookup-hint">Vyskúšajte ukážkový účet: <button class="link-button" type="button" id="use-demo">demo@example.com</button></p>
+            <p class="field-error" id="lookup-error" role="alert"></p>
+          </div>
+          <button class="btn btn-dark" type="submit" id="lookup-submit">Zobraziť rezervácie</button>
+        </form>
+        <ul class="lookup-tips">
+          <li><span data-icon="calendar"></span>Prehľad nadchádzajúcich aj minulých termínov</li>
+          <li><span data-icon="swap"></span>Presun na iný deň alebo čas</li>
+          <li><span data-icon="close"></span>Zrušenie, ktoré termín hneď uvoľní</li>
+        </ul>
+        </div>
+
+        <div class="results" id="my-bookings-results" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ČASTÉ OTÁZKY -->
+    <section class="section theme-beige" id="otazky" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section-head">
+          <h2 id="faq-title">Časté otázky</h2>
+          <p>Nenašli ste odpoveď? Zavolajte nám alebo napíšte, kontakt je hneď pod otázkami.</p>
+        </div>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section theme-dark" id="kontakt" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-main">
+          <h2 id="contact-title">Kontakt a otváracie hodiny</h2>
+          <p class="contact-lead">Ak termín nenájdete, zavolajte nám. Radi nájdeme riešenie.</p>
+
+          <table class="hours" id="hours-table">
+            <caption class="visually-hidden">Otváracie hodiny</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Pondelok</th><td>9:00 – 19:00</td></tr>
+              <tr data-day="2"><th scope="row">Utorok</th><td>9:00 – 19:00</td></tr>
+              <tr data-day="3"><th scope="row">Streda</th><td>9:00 – 19:00</td></tr>
+              <tr data-day="4"><th scope="row">Štvrtok</th><td>9:00 – 19:00</td></tr>
+              <tr data-day="5"><th scope="row">Piatok</th><td>9:00 – 19:00</td></tr>
+              <tr data-day="6"><th scope="row">Sobota</th><td>9:00 – 14:00</td></tr>
+              <tr data-day="0"><th scope="row">Nedeľa</th><td>Zatvorené</td></tr>
+            </tbody>
+          </table>
+          <p class="hours-note" id="hours-note" hidden></p>
+        </div>
+
+        <a class="map-wrap" data-shop-href="mapLink" href="https://www.openstreetmap.org/?mlat=48.1486&amp;mlon=17.1077#map=17/48.1486/17.1077" target="_blank" rel="noopener noreferrer" aria-label="Otvoriť mapu: Obchodná 12, Bratislava (otvorí sa v novom okne)">
+          <svg class="map-art" viewBox="0 0 480 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Schematická mapa okolia Barber Studio">
+            <rect width="480" height="400" fill="#54463b"/>
+            <path d="M292 262q44-34 104-12l34 74q-64 44-138 10z" fill="#5f5145"/>
+            <path d="M-20 338C92 304 170 384 282 354S430 322 500 366" fill="none" stroke="#3d322a" stroke-width="36" stroke-linecap="round"/>
+            <g fill="#63554a">
+              <rect x="20" y="28" width="92" height="64" rx="7"/><rect x="132" y="22" width="84" height="76" rx="7"/>
+              <rect x="246" y="28" width="86" height="70" rx="7"/><rect x="356" y="30" width="98" height="62" rx="7"/>
+              <rect x="22" y="132" width="86" height="70" rx="7"/><rect x="132" y="126" width="92" height="76" rx="7"/>
+              <rect x="268" y="118" width="62" height="80" rx="7"/><rect x="352" y="124" width="100" height="70" rx="7"/>
+              <rect x="30" y="236" width="82" height="60" rx="7"/><rect x="138" y="232" width="86" height="62" rx="7"/>
+            </g>
+            <g fill="none" stroke="#786a5e" stroke-linecap="round">
+              <path d="M-10 108L490 120M-10 214L490 196" stroke-width="12"/>
+              <path d="M122-10L128 410M240-10L252 410M342-10L338 410" stroke-width="12"/>
+              <path d="M-10 168L490 160M60-10L64 300M430-10L436 300" stroke-width="5"/>
+            </g>
+            <g transform="translate(246 158)">
+              <circle r="30" fill="#f2a05a" opacity=".22"/>
+              <path d="M0 24C-14 6-19 0-19-9a19 19 0 0 1 38 0c0 9-5 15-19 33z" fill="#f2a05a"/>
+              <circle cy="-9" r="6.500" fill="#2a1a0c"/>
+            </g>
+          </svg>
+          <span class="map-label">Otvoriť mapu</span>
+        </a>
+
+        <address class="contact-tiles">
+          <div class="contact-tile">
+            <span class="icon-tile" data-icon="pin"></span>
+            <div>
+              <p class="contact-key">Adresa</p>
+              <p class="contact-value"><span data-shop="street">Obchodná 12</span><br><span data-shop="zipCity">811 06 Bratislava</span></p>
+              <a class="contact-link" data-shop-href="mapLink" href="https://www.openstreetmap.org/?mlat=48.1486&amp;mlon=17.1077#map=17/48.1486/17.1077" target="_blank" rel="noopener noreferrer">Otvoriť mapu v novom okne</a>
+            </div>
+          </div>
+          <div class="contact-tile">
+            <span class="icon-tile" data-icon="phone"></span>
+            <div>
+              <p class="contact-key">Telefón</p>
+              <p class="contact-value"><a data-shop="phone" data-shop-href="tel" href="tel:+421900123456">+421 900 123 456</a></p>
+            </div>
+          </div>
+          <div class="contact-tile">
+            <span class="icon-tile" data-icon="mail"></span>
+            <div>
+              <p class="contact-key">E-mail</p>
+              <p class="contact-value"><a data-shop="email" data-shop-href="mailto" href="mailto:barbershopmn17@gmail.com">barbershopmn17@gmail.com</a></p>
+            </div>
+          </div>
+        </address>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Barber Studio</p>
+        <p class="footer-copy">&copy; <span id="year">2026</span> Barber Studio. Všetky práva vyhradené.</p>
+        <p class="footer-demo" id="footer-mode">Ukážková verzia: rezervácie sa ukladajú iba vo vašom prehliadači.
+          <button class="link-button" type="button" id="reset-demo">Obnoviť demo dáta</button>
+          <span class="reset-confirm" id="reset-confirm" role="group" aria-label="Potvrdenie obnovenia" hidden>
+            Naozaj obnoviť? Vaše rezervácie sa odstránia.
+            <button class="link-button" type="button" id="reset-yes">Áno, obnoviť</button>
+            <button class="link-button" type="button" id="reset-no">Nie</button>
+          </span>
+        </p>
+      </div>
+
+      <nav aria-label="Rýchle odkazy">
+        <p class="footer-title">Rýchle odkazy</p>
+        <ul class="footer-links">
+          <li><a href="#o-nas">O nás</a></li>
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#barberi">Barberi</a></li>
+          <li><a href="#rezervacia">Rezervácia</a></li>
+          <li><a href="#moje-rezervacie">Moje rezervácie</a></li>
+          <li><a href="#otazky">Časté otázky</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-hours">
+        <p class="footer-title">Otváracie hodiny</p>
+        <p id="footer-hours">Pondelok až piatok 9:00 – 19:00<br>Sobota 9:00 – 14:00<br>Nedeľa zatvorené</p>
+        <p><button class="link-button" type="button" data-open-privacy>Ochrana údajov</button></p>
+        <a class="btn btn-orange btn-small" href="#rezervacia">Rezervovať termín</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="dialog" id="privacy-dialog" aria-labelledby="privacy-title">
+    <div class="dialog-head">
+      <h2 id="privacy-title">Ochrana údajov</h2>
+      <button class="icon-button" type="button" id="privacy-close" aria-label="Zavrieť okno"><span data-icon="close"></span></button>
+    </div>
+    <div class="dialog-body">
+      <h3>Aké údaje potrebujeme</h3>
+      <p>Meno, e-mail, telefónne číslo, vybraný termín a prípadnú poznámku. Nič ďalšie nezbierame.</p>
+      <h3>Na čo ich používame</h3>
+      <p>Iba na vybavenie rezervácie: aby sme vedeli, kto príde, a mohli vás kontaktovať, keby sa termín musel zmeniť.</p>
+      <h3>Kde sú uložené</h3>
+      <p id="privacy-storage">V tejto ukážkovej verzii sa údaje ukladajú iba vo vašom prehliadači a nikam sa neodosielajú. Odstránite ich tlačidlom Obnoviť demo dáta v pätičke stránky.</p>
+      <h3>Čo stránka nerobí</h3>
+      <p>Nepoužíva sledovacie cookies ani analytiku a písma sú súčasťou stránky, takže sa nič nenačítava z cudzích serverov.</p>
+      <h3>Vaše práva</h3>
+      <p>O opravu alebo výmaz údajov môžete požiadať e-mailom na <span data-shop="email">barbershopmn17@gmail.com</span>.</p>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/booking-logic.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
